@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Project 1",
+    "github": "githubUrl1",
+    "deployed": "deployedUrl1",
+    "image": "img1"
+  },
+  {
+    "title": "Project 2",
+    "github": "githubUrl2",
+    "deployed": "deployedUrl2",
+    "image": "img2"
+  },
+  {
+    "title": "Project 3",
+    "github": "githubUrl3",
+    "deployed": "deployedUrl3",
+    "image": "img3"
+  },
+  {
+    "title": "Project 4",
+    "github": "githubUrl4",
+    "deployed": "deployedUrl4",
+    "image": "img4"
+  },
+  {
+    "title": "Project 5",
+    "github": "githubUrl5",
+    "deployed": "deployedUrl5",
+    "image": "img5"
+  },
+  {
+    "title": "Project 6",
+    "github": "githubUrl6",
+    "deployed": "deployedUrl6",
+    "image": "img6"
+  }
+]

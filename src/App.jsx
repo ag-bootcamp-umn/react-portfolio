@@ -5,13 +5,13 @@ import { Footer, Header, Nav } from "./components";
 import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
-  
+  const currentPage = useLocation().pathname;
 
   return (
     <>
-      <Header>
+      <Header currentPage={currentPage}>
         {/* <Nav currentPage={currentPage} /> */}
-      </Header>
+      </Header >
       <main>
           <Routes>
             <Route path="/" element={<About />} />
