@@ -1,0 +1,36 @@
+$color-white: #ffffff;
+
+$color-black: #040403;
+$color-black-light: #191815;
+
+$color-grey-dark: #2e2c27;
+$color-grey-medium: #59554c;
+$color-grey-medium-light: #969ba0;
+$color-grey-light: #b1ada4;
+$color-grey-lighter: #e7e6e3;
+
+// STYLE
+
+$font-primary: Arial, Helvetica, sans-serif;
+$font-secondary: "Garamond", Times, serif;
+// $font-primary: 'Gotham', sans-serif;
+// $font-secondary: 'Roboto', sans-serif;
+$default-font-size: 2rem;
+
+$font-dark: $color-grey-medium;
+$font-light: $color-white;
+
+// $gradient-primary: linear-gradient(to top right, $color-primary-dark, $color-primary-light);
+// $gradient-gold: linear-gradient(to top right, $color-secondary-dark, $color-secondary-light);
+// $hero-gradient: linear-gradient(to left top, rgba($color-black-light,0.5), rgba($color-grey-dark,0.5));
+
+$imgShadow: 0 0.5rem 1rem rgba($color-grey-dark,.5);
+$shadow-light-w: rgba($color-grey-medium, 0.5) 0px .8rem 2.4rem;
+$shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;      // 1200px
+$bp-large: 62.5em;      // 1000px
+$bp-medium: 50em;       // 800px
+$bp-small: 37.5em;      // 600
+$bp-xs: 31.25em;        // 500px
