@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-export default function Nav({ currentPage }) {
+export default function Nav({currentPage, isChecked}) {
+  console.log(isChecked)
   const pages = [
     { page: "About", route: "/" },
     { page: "Portfolio", route: "/portfolio" },
@@ -9,15 +11,17 @@ export default function Nav({ currentPage }) {
   ];
 
   return (
-    <nav>
+    <nav className={`nav${isChecked? ' reveal u-overflow-hidden': ''}`}>
       {pages.map(({ page, route }) => (
+        <div className="nav__item" key={page}>
         <Link
-          key={page}
+          
           to={route}
-          className={route === currentPage ? "active" : "somethingElse"}
+          className={route === currentPage ? "active" : ""}
         >
           {page}
         </Link>
+        </div>
       ))}
     </nav>
   );

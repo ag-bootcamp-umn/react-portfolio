@@ -1,13 +1,17 @@
 $color-white: #ffffff;
 
-$color-black: #040403;
-$color-black-light: #191815;
+$color-red: #a31621;
+$color-yellow: #f0a202;
+$color-blue-dark: #235789;
+$color-blue-light: #74b3ce;
+$color-green-dark: #568259;
+$color-green-light: #8cba80;
 
-$color-grey-dark: #2e2c27;
-$color-grey-medium: #59554c;
-$color-grey-medium-light: #969ba0;
-$color-grey-light: #b1ada4;
-$color-grey-lighter: #e7e6e3;
+$color-black: #191815;
+
+$color-grey-dark: #313638;
+$color-grey-medium: #8a716a;
+$color-grey-light: #f7ebe8;
 
 // STYLE
 
@@ -17,8 +21,9 @@ $font-secondary: "Garamond", Times, serif;
 // $font-secondary: 'Roboto', sans-serif;
 $default-font-size: 2rem;
 
-$font-dark: $color-grey-medium;
-$font-light: $color-white;
+$font-dark: $color-grey-dark;
+$font-light: $color-grey-light;
+$font-nav: $color-blue-dark;
 
 // $gradient-primary: linear-gradient(to top right, $color-primary-dark, $color-primary-light);
 // $gradient-gold: linear-gradient(to top right, $color-secondary-dark, $color-secondary-light);
