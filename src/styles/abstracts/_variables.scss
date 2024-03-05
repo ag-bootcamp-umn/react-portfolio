@@ -1,17 +1,17 @@
-$color-white: #ffffff;
+$color-white: #fcfcfc;
 
-$color-red: #a31621;
-$color-yellow: #f0a202;
-$color-blue-dark: #235789;
-$color-blue-light: #74b3ce;
-$color-green-dark: #568259;
+$color-red: #a12e14;
+$color-yellow: #d7cf07;
+$color-blue-dark: #0d3b66;
+$color-blue-light: #7ea0c5;
+$color-green-dark: #50723c;
 $color-green-light: #8cba80;
 
-$color-black: #191815;
+$color-black: #1c1e1c;
 
-$color-grey-dark: #313638;
-$color-grey-medium: #8a716a;
-$color-grey-light: #f7ebe8;
+$color-grey-dark: #13262f;
+// $color-grey-medium: #7ea0c5;
+$color-grey-light: #ccdce7;
 
 // STYLE
 
@@ -23,19 +23,20 @@ $default-font-size: 2rem;
 
 $font-dark: $color-grey-dark;
 $font-light: $color-grey-light;
-$font-nav: $color-blue-dark;
+$font-nav: $color-grey-light;
 
 // $gradient-primary: linear-gradient(to top right, $color-primary-dark, $color-primary-light);
 // $gradient-gold: linear-gradient(to top right, $color-secondary-dark, $color-secondary-light);
 // $hero-gradient: linear-gradient(to left top, rgba($color-black-light,0.5), rgba($color-grey-dark,0.5));
 
-$imgShadow: 0 0.5rem 1rem rgba($color-grey-dark,.5);
-$shadow-light-w: rgba($color-grey-medium, 0.5) 0px .8rem 2.4rem;
-$shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$imgShadow: 0 0.5rem 1rem rgba(#222222, 0.5);
+$shadow-light-w: rgba(#5a5a5a, 0.5) 0px 0.8rem 2.4rem;
+$shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em;      // 1200px
-$bp-large: 62.5em;      // 1000px
-$bp-medium: 50em;       // 800px
-$bp-small: 37.5em;      // 600
-$bp-xs: 31.25em;        // 500px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600
+$bp-xs: 31.25em; // 500px

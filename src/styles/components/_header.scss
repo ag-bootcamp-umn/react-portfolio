@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .header {
-  // position: absolute;
+  position: absolute;
   width: 100%;
 
   &__top {
@@ -47,10 +47,10 @@
     }
   }
 
-.sticky {
-  position: fixed;
-  // background-color: rgba(v.$color-grey-dark, .95);
-  z-index: 100;
-  box-shadow: 0 0.8rem 1.4rem #59554c80;;
-}
+  .sticky {
+    position: fixed;
+    // background-color: rgba(v.$color-grey-dark, .95);
+    z-index: 100;
+    box-shadow: 0 0.8rem 1.4rem #59554c80;
+  }
 }

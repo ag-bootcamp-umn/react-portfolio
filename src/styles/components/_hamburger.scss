@@ -1,8 +1,7 @@
-@use "../abstracts/variables"as v;
-@use "../abstracts/mixins"as m;
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .hamburger {
-
   &__checkbox {
     display: none;
   }
@@ -20,9 +19,9 @@
     cursor: pointer;
     transition: all 0.2s;
 
-    @include m.respond(bp-md) {
-      display: flex;
-    }
+    // @include m.respond(bp-md) {
+    display: flex;
+    // }
   }
 
   &__icon {
@@ -53,7 +52,7 @@
     }
   }
 
-  /// 
+  ///
   &__button:hover &__icon,
   &__button:hover &__icon::after,
   &__button:hover &__icon::before {
@@ -68,16 +67,16 @@
     top: 1.1rem;
   }
 
-  &__checkbox:checked+&__button &__icon {
+  &__checkbox:checked + &__button &__icon {
     background-color: transparent;
   }
 
-  &__checkbox:checked+&__button &__icon::before {
+  &__checkbox:checked + &__button &__icon::before {
     top: 0;
     transform: rotate(45deg);
   }
 
-  &__checkbox:checked+&__button &__icon::after {
+  &__checkbox:checked + &__button &__icon::after {
     top: 0;
     transform: rotate(-45deg);
   }
