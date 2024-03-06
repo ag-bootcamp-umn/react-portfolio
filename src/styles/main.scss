@@ -9,4 +9,7 @@
 @use "components/header";
 @use "components/nav";
 
+@use "layout/grid";
+@use "layout/page-section";
+
 @use "pages/about";

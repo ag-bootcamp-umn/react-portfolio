@@ -1,16 +1,16 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { About, Contact, Portfolio, Resume } from "./pages";
 import { Footer, Header, Nav } from "./components";
 
 export default function App() {
   const currentPage = useLocation().pathname;
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
     <>
-      <Header className="header" currentPage={currentPage}>
-        {/* <Nav currentPage={currentPage} /> */}
-      </Header>
+      <Header className="header" currentPage={currentPage} />
+      <Nav currentPage={currentPage} navOpen={navOpen} />
       <main>
         {/* <div className="container"> */}
         <Routes>

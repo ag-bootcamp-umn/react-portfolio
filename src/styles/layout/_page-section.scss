@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.page-section {
+  padding: 8% 0;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 2.5rem;
+  background: v.$color-grey-light;
+  color: v.$color-blue-2;
+
+  &--blue-2 {
+    background: v.$color-blue-2;
+    color: v.$color-grey-light;
+  }
+}
