@@ -1,6 +1,10 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
 
+body:has(nav.reveal) {
+  overflow: hidden;
+}
+
 .nav {
   justify-self: end;
   display: grid;

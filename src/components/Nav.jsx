@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { usePageContext } from "../providers/PageProvider";
 
-export default function Nav({ currentPage, navOpen }) {
-  const [isChecked, setIsChecked] = useState(navOpen);
-  console.log(isChecked);
+export default function Nav({ navOpen }) {
+  const { currentPage, setMenuOpen, menuOpen } = usePageContext();
+  const params = useParams();
+  console.log(currentPage);
   const pages = [
     { page: "About", route: "/" },
     { page: "Portfolio", route: "/portfolio" },
@@ -12,30 +14,37 @@ export default function Nav({ currentPage, navOpen }) {
   ];
 
   function checkHandler() {
-    setIsChecked(!isChecked);
+    setMenuOpen(!menuOpen);
   }
+
+  useEffect(() => {
+    console.log(params);
+  }, []);
 
   return (
     <>
-      <nav className={`nav${isChecked ? " reveal u-overflow-hidden" : ""}`}>
+      {/* <PageProvider> */}
+      <nav className={`nav${menuOpen ? " reveal" : ""}`}>
         {pages.map(({ page, route }) => (
-          <div className="nav__item" key={page}>
-            <Link
-              to={route}
-              className={route === currentPage ? "active" : ""}
-              onClick={checkHandler}
-            >
+          <div
+            className={`nav__item${
+              route === currentPage ? " nav__item--active" : ""
+            }`}
+            key={page}
+          >
+            <Link to={route} onClick={checkHandler}>
               {page}
             </Link>
           </div>
         ))}
       </nav>
+      {/* </PageProvider> */}
       <div className="hamburger">
         <input
           type="checkbox"
           className="hamburger__checkbox"
           id="nav-toggle"
-          checked={isChecked}
+          checked={menuOpen}
           onChange={checkHandler}
         />
         <h4 className="hamburger__title">MENU</h4>

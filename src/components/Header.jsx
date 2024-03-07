@@ -1,4 +1,9 @@
-export default function Header(props) {
+import Nav from "./Nav";
+import { usePageContext } from "../providers/PageProvider";
+
+export default function Header() {
+  const { menuOpen } = usePageContext();
+
   return (
     <>
       <header className="header">
@@ -6,6 +11,7 @@ export default function Header(props) {
           <div className="header__branding">
             <h1>alexGeerDev()</h1>
           </div>
+          <Nav />
         </div>
       </header>
     </>
