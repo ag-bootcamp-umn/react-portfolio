@@ -9,7 +9,7 @@ export default function Header() {
       <header className="header">
         <div className="header__top">
           <div className="header__branding">
-            <h1>alexGeerDev()</h1>
+            <h1 className="header__title">alexGeerDev()</h1>
           </div>
           <Nav />
         </div>

@@ -17,4 +17,9 @@
       padding: 3rem 3.5rem;
     }
   }
+
+  &__title {
+    font-family: v.$font-mono;
+    color: v.$color-white;
+  }
 }

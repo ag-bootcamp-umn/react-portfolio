@@ -18,17 +18,13 @@ $color-black-2: #22223b;
 
 $font-primary: Arial, Helvetica, sans-serif;
 $font-secondary: "Garamond", Times, serif;
-// $font-primary: 'Gotham', sans-serif;
-// $font-secondary: 'Roboto', sans-serif;
+$font-mono: monospace;
+
 $default-font-size: 2rem;
 
 $font-dark: $color-grey-dark;
 $font-light: $color-grey-light;
 $font-nav: $color-grey-light;
-
-// $gradient-primary: linear-gradient(to top right, $color-primary-dark, $color-primary-light);
-// $gradient-gold: linear-gradient(to top right, $color-secondary-dark, $color-secondary-light);
-// $hero-gradient: linear-gradient(to left top, rgba($color-black-light,0.5), rgba($color-grey-dark,0.5));
 
 $imgShadow: 0 0.5rem 1rem rgba(#222222, 0.5);
 $shadow-light-w: rgba(#5a5a5a, 0.5) 0px 0.8rem 2.4rem;

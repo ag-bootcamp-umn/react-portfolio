@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .page-section {
-  padding: 8% 0;
+  padding: 15rem 0;
   display: grid;
   grid-auto-rows: auto;
   gap: 2.5rem;
@@ -15,6 +15,6 @@
   }
 
   &--padding-top {
-    padding: 10% 0 0 0;
+    padding: 15rem 0 0 0;
   }
 }
