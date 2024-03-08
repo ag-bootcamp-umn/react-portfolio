@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { Project } from "../components";
 import projectData from "../assets/projects.json";
 
 import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 export default function Portfolio() {
-
-  const [projects, setProjects] = useState(projectData);
-
+  if (!projectData.length) return <></>;
   return (
-   <>
-    <Project projects={projects}/>
-   </>
-  )
+    <>
+      {projectData.map((project) => (
+        <Project key={project.title} project={project} />
+      ))}
+    </>
+  );
 }
