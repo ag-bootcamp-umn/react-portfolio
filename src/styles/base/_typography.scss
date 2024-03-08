@@ -23,7 +23,7 @@ body {
 
 .heading-1 {
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 3.5rem;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -34,13 +34,13 @@ body {
   }
 
   @include m.respond(bp-sm) {
-    font-size: 3.5rem;
+    font-size: 6rem;
     letter-spacing: 1.2px;
   }
 }
 
 .heading-2 {
-  font-size: 5rem;
+  font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.5;
   // color: v.$color-primary-dark;
@@ -50,27 +50,27 @@ body {
   }
 
   @include m.respond(bp-sm) {
-    font-size: 3.2rem;
+    font-size: 5rem;
   }
 }
 
 .heading-3 {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1px;
   // color: v.$color-primary-light;
 
   @include m.respond(bp-lg) {
-    font-size: 3rem;
+    font-size: 3.4rem;
     line-height: 1.5;
   }
 }
 
 p {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 
   @include m.respond(bp-lg) {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }

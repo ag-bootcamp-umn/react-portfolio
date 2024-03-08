@@ -1,7 +1,23 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
 .grid {
   display: grid;
 
   &--gap {
     gap: 4rem;
+  }
+
+  &--123 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+
+    @include m.respond(bp-md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // @include m.respond(bp-xl) {
+    //   grid-template-columns: 1fr 1fr 1fr;
+    // }
   }
 }

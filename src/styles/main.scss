@@ -7,9 +7,9 @@
 
 @use "components/hamburger";
 @use "components/header";
+@use "components/hero";
 @use "components/nav";
+@use "components/project";
 
 @use "layout/grid";
 @use "layout/page-section";
-
-@use "pages/about";

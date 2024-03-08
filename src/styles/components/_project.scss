@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.project {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  justify-items: center;
+  gap: 1.5rem;
+
+  & h2 {
+    grid-column: 1 / -1;
+    font-size: 3rem;
+  }
+
+  & img {
+    grid-column: 1 / -1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: v.$imgShadow;
+  }
+
+  & a,
+  & a:link,
+  & a:visited {
+    font-size: 2.4rem;
+    color: v.$color-blue;
+    text-decoration: none;
+  }
+
+  & a:hover,
+  & a:active {
+    color: v.$color-black-2;
+  }
+}

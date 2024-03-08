@@ -1,38 +1,44 @@
 [
   {
-    "title": "Project 1",
-    "github": "githubUrl1",
-    "deployed": "deployedUrl1",
-    "image": "img1"
+    "title": "Pinnacle Solar",
+    "github": "https://github.com/agDesignz/pinnacle-solar_wp",
+    "deployed": "https://pinnaclesolarenergy.com/",
+    "image": "../images/project-pinn.png",
+    "alt": "screenshot of Pinnacle Solar website."
   },
   {
-    "title": "Project 2",
-    "github": "githubUrl2",
-    "deployed": "deployedUrl2",
-    "image": "img2"
+    "title": "VoteDavidGS",
+    "github": "https://github.com/agDesignz/votedavidgs-wp",
+    "deployed": "https://votedavidgs.com/",
+    "image": "../images/project-votedg.png",
+    "alt": "screenshot of VoteDageGS website."
   },
   {
-    "title": "Project 3",
-    "github": "githubUrl3",
-    "deployed": "deployedUrl3",
-    "image": "img3"
+    "title": "DKG Landscaping",
+    "github": "https://github.com/agDesignz/dkgLandscaping_Sass",
+    "deployed": "https://agdesignz.github.io/dkgLandscaping_Sass/",
+    "image": "../images/project-dkg.png",
+    "alt": "screenshot of DKG landscaping."
   },
   {
-    "title": "Project 4",
-    "github": "githubUrl4",
-    "deployed": "deployedUrl4",
-    "image": "img4"
+    "title": "Jane Prince",
+    "github": "https://github.com/agDesignz/jane_prince_html",
+    "deployed": "https://agdesignz.github.io/jane_prince_html/",
+    "image": "../images/project-jane.png",
+    "alt": "screenshot of Jane Prince campaign website."
   },
   {
-    "title": "Project 5",
-    "github": "githubUrl5",
-    "deployed": "deployedUrl5",
-    "image": "img5"
+    "title": "Pets R Us",
+    "github": "https://github.com/ag-bootcamp-umn/pets-r-us",
+    "deployed": "https://petsrus-mock-charity-bba28605e28b.herokuapp.com/pets",
+    "image": "../images/project-pets.png",
+    "alt": "screenshot of PetsRUs mock charity."
   },
   {
-    "title": "Project 6",
-    "github": "githubUrl6",
-    "deployed": "deployedUrl6",
-    "image": "img6"
+    "title": "Jot-it Notes",
+    "github": "https://github.com/ag-bootcamp-umn/jot-it-notes",
+    "deployed": "https://jot-it-notes-a8f6eb8bda87.herokuapp.com/",
+    "image": "../images/project-notes.png",
+    "alt": "screenshot of jot-it note-taking app."
   }
 ]

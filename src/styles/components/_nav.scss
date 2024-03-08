@@ -20,12 +20,13 @@ body:has(nav.reveal) {
   right: 0;
   height: 100vh;
   padding: 3.5rem;
-  padding-top: 12rem;
-  text-align: right;
+  // padding-top: 12rem;
+  // text-align: right;
   row-gap: 2.8rem;
   background-color: v.$color-black;
   transform-origin: top;
-  justify-items: end;
+  align-content: center;
+  justify-items: center;
 
   &__item {
     list-style: none;
@@ -43,10 +44,6 @@ body:has(nav.reveal) {
       transform: scaleX(0);
       transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
         background-color 0.1s;
-
-      // @include m.respond(bp-md) {
-      //   display: none;
-      // }
     }
 
     &:hover::after,

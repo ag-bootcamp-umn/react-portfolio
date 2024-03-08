@@ -100,4 +100,8 @@
     top: 0;
     transform: rotate(-45deg);
   }
+
+  &:has(.hamburger__checkbox:checked) {
+    right: 4.7rem;
+  }
 }
