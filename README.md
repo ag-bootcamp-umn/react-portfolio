@@ -1,8 +1,24 @@
-# React + Vite
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Portfolio
 
-Currently, two official plugins are available:
+## [See the site on Netlify](https://alexgeer.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+A professional portfolio built with react to showcase my work and allow others to download my resume and/or contact me. This site is a work in progress. Check back for improvements.
+
+## Screenshots
+
+![screenshot](assets/screenshot-1.png)
+![screenshot](assets/screenshot-2.png)
+![screenshot](assets/screenshot-3.png)
+![screenshot](assets/screenshot-4.png)
+
+## Questions
+
+Github: [ag-bootcamp-umn](https://github.com/ag-bootcamp-umn)
+
+## License
+
+Licensed under the [MIT](https://opensource.org/license/mit/) license.
