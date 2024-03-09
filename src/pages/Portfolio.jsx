@@ -1,5 +1,10 @@
 import { Project } from "../components";
+// import React, { useState, useEffect } from "react";
 import projectData from "../assets/projects.json";
+
+// const images = projectData.map((project) => {
+//   return project.image;
+// });
 
 export default function Portfolio() {
   if (!projectData.length) return <></>;
@@ -19,7 +24,7 @@ export default function Portfolio() {
       <section className="page-section">
         <div className="container">
           <div className="row grid grid--gap grid--123">
-            {projectData.map((project) => (
+            {projectData.map((project, i) => (
               <Project key={project.title} project={project} />
             ))}
           </div>

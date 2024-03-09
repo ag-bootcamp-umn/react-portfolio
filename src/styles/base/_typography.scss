@@ -17,7 +17,7 @@ h6 {
 body {
   font-family: v.$font-primary;
   font-size: v.$default-font-size;
-  color: v.$font-dark;
+  color: v.$font-light;
   font-weight: 400;
 }
 
@@ -43,7 +43,6 @@ body {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.5;
-  // color: v.$color-primary-dark;
 
   @include m.respond(bp-lg) {
     font-size: 4.2rem;
@@ -59,7 +58,6 @@ body {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1px;
-  // color: v.$color-primary-light;
 
   @include m.respond(bp-lg) {
     font-size: 3.4rem;

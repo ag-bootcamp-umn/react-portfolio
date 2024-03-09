@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.footer {
+  background-color: v.$color-blue-2;
+  margin-top: auto;
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: v.$color-white;
+      text-decoration: none;
+    }
+  }
+
+  &:active,
+  &:hover {
+    color: v.$color-blue;
+  }
+}

@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: v.$color-grey-light;
+  background-color: v.$color-grey-dark;
   line-height: 1.7;
 }
 
@@ -45,4 +45,10 @@ figure > img {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

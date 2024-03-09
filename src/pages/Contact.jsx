@@ -55,12 +55,11 @@ export default function Contact() {
 
       <section className="page-section">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-md-6">
-              <h2>Contact Me</h2>
-            </div>
+              <h2 className="heading-2">Contact Me</h2>
+              <p>Email: alexgeorgegeer@gmail.com</p>
 
-            <div className="col-md-6">
               <Form>
                 <Form.Group className="mb-3" controlId="name">
                   <Form.Control
@@ -82,9 +81,6 @@ export default function Contact() {
                     onChange={handleInputChange}
                     onBlur={handleValidation}
                   />
-                  <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                  </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="message">
