@@ -22,7 +22,7 @@ export default function Project({ project }) {
 
         <Link
           className="project__img-link"
-          to={{ pathname: project.deployed }}
+          to={project.deployed}
           target="_blank"
         >
           {!imgLoaded ? (
@@ -31,7 +31,7 @@ export default function Project({ project }) {
             <img src={imgUrl} alt={project.alt} />
           )}
         </Link>
-        <Link to={{ pathname: project.github }} target="_blank">
+        <Link to={project.github} target="_blank">
           Github
         </Link>
       </div>

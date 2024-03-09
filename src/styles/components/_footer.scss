@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .footer {
-  background-color: v.$color-blue-2;
+  background-color: v.$color-black;
   margin-top: auto;
 
   &__link {
