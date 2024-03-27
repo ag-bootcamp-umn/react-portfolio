@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.button {
+  &--lg {
+    // height: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  & > a {
+    text-decoration: none;
+    color: v.$color-grey-dark;
+  }
+}

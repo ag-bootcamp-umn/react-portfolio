@@ -14,6 +14,13 @@
     "alt": "screenshot of VoteDageGS website."
   },
   {
+    "title": "JobPilot",
+    "github": "https://github.com/Ms-Meredith-McD/JobPilot",
+    "deployed": "https://job-pilot-a6ce9a91751d.herokuapp.com/",
+    "image": "/images/project-jobpilot.png",
+    "alt": "screenshot of JobPilot."
+  },
+  {
     "title": "DKG Landscaping",
     "github": "https://github.com/agDesignz/dkgLandscaping_Sass",
     "deployed": "https://agdesignz.github.io/dkgLandscaping_Sass/",
@@ -33,12 +40,5 @@
     "deployed": "https://petsrus-mock-charity-bba28605e28b.herokuapp.com/pets",
     "image": "/images/project-pets.png",
     "alt": "screenshot of PetsRUs mock charity."
-  },
-  {
-    "title": "Jot-it Notes",
-    "github": "https://github.com/ag-bootcamp-umn/jot-it-notes",
-    "deployed": "https://jot-it-notes-a8f6eb8bda87.herokuapp.com/",
-    "image": "/images/project-notes.png",
-    "alt": "screenshot of jot-it note-taking app."
   }
 ]

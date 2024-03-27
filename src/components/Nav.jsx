@@ -5,7 +5,6 @@ import { usePageContext } from "../providers/PageProvider";
 export default function Nav({ navOpen }) {
   const { currentPage, setMenuOpen, menuOpen } = usePageContext();
   const params = useParams();
-  console.log(currentPage);
   const pages = [
     { page: "About", route: "/" },
     { page: "Portfolio", route: "/portfolio" },
@@ -16,10 +15,6 @@ export default function Nav({ navOpen }) {
   function checkHandler() {
     setMenuOpen(!menuOpen);
   }
-
-  useEffect(() => {
-    console.log(params);
-  }, []);
 
   return (
     <>

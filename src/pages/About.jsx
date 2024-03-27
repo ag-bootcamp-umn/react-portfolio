@@ -39,6 +39,11 @@ export default function About() {
                 the embracing of challenges; the telling of stories.
               </p>
               <p>
+                My first career was in language education, proofreading,
+                translation, and theatre. All this changed in 2020, when I
+                discovered web development.
+              </p>
+              <p>
                 After several years of online self-study and some freelance work
                 as a Wordpress developer, I graduated from the University of
                 Minnesota Full-Stack Coding Bootcamp in 2024, eager for the next
