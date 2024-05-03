@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { validateEmail } from "../utils/helpers";
+import emailjs from "@emailjs/browser";
+import "dotenv";
 
 export default function Contact() {
   // Grouping state as an object
@@ -17,6 +19,8 @@ export default function Contact() {
   function handleInputChange(e) {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   }
+
+  const form = useRef();
 
   function handleValidation(e) {
     // Check for a good email
@@ -39,6 +43,25 @@ export default function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.EMAILJS_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
     setUserMessage("email sent");
     setFormState({ name: "", email: "", message: "" });
   }
@@ -60,7 +83,7 @@ export default function Contact() {
               <h2 className="heading-2">Contact Me</h2>
               <p>Email: alexgeorgegeer@gmail.com</p>
 
-              <Form>
+              <Form ref={form} onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="name">
                   <Form.Control
                     type="input"
@@ -94,7 +117,7 @@ export default function Contact() {
                   />
                 </Form.Group>
 
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button variant="primary" type="submit">
                   Submit
                 </Button>
                 {userMessage && <h5 className="error-msg">{userMessage}</h5>}

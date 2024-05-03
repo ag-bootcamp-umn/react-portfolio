@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       <Hero />
-      <section className="page-section">
+      <section className="page-section page-section--blue-2">
         <div className="container">
           <div className="row justify-content-center">
             <article className="col-md-8 grid grid--gap text-center">

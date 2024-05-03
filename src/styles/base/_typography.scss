@@ -17,7 +17,7 @@ h6 {
 body {
   font-family: v.$font-primary;
   font-size: v.$default-font-size;
-  color: v.$font-light;
+  color: v.$font-dark;
   font-weight: 400;
 }
 
@@ -74,5 +74,5 @@ p {
 }
 
 .error-msg {
-  color: v.$color-red;
+  color: v.$color-4;
 }

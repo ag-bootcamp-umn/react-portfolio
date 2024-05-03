@@ -72,7 +72,7 @@
   &__button:hover &__icon,
   &__button:hover &__icon::after,
   &__button:hover &__icon::before {
-    background-color: v.$color-blue;
+    background-color: v.$color-1;
   }
 
   &__button:hover &__icon::before {
