@@ -28,6 +28,51 @@
   }
 }
 
+@mixin bp-xs {
+  @media (min-width: 21.875em) {
+    /* 350px */
+    @content;
+  }
+}
+@mixin bp-sm {
+  @media only screen and (min-width: 37.5em) {
+    @content;
+  } //600px
+}
+@mixin bp-md {
+  @media only screen and (min-width: 56.25em) {
+    @content;
+  } //900px
+}
+@mixin bp-lg {
+  @media only screen and (min-width: 62.5em) {
+    @content;
+  } //1000px
+}
+@mixin bp-xl {
+  @media only screen and (min-width: 75em) {
+    @content;
+  } //1200px
+}
+@mixin bp-xxl {
+  @media only screen and (min-width: 93.75em) {
+    @content;
+  } //1500px
+}
+
+@mixin bp-h-md {
+  @media only screen and (min-height: 62.5em) {
+    @content;
+  }
+}
+
+@mixin bp-nav {
+  @media (min-width: 75em) {
+    /* 1200px */
+    @content;
+  }
+}
+
 // @mixin padVertMd {
 //   padding-top: 8%;
 //   padding-bottom: 8%;

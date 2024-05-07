@@ -8,11 +8,29 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient(
-      rgba(v.$color-black, 0.6),
-      rgba(v.$color-black, 0.6)
-    ),
-    url(../assets/images/bg-mountains.png);
+  background: v.$hero-gradient,
+    // url(../assets/images/bg-mountains.png);
+    url(../../public/images/bg-monadnock-ps.jpg) no-repeat left center / cover;
+
+  @include m.bp-sm {
+    background: v.$hero-gradient,
+      url(../../public/images/bg-monadnock-pl.jpg) no-repeat left center / cover;
+  }
+
+  @include m.bp-md {
+    background: v.$hero-gradient,
+      url(../../public/images/bg-monadnock-ls.jpg) no-repeat left center / cover;
+  }
+
+  @include m.bp-h-md {
+    background: v.$hero-gradient,
+      url(../../public/images/bg-monadnock-ll.jpg) no-repeat left center / cover;
+  }
+
+  @include m.bp-lg {
+    background: v.$hero-gradient,
+      url(../../public/images/bg-monadnock-ll.jpg) no-repeat left center / cover;
+  }
 
   &__content {
     display: grid;

@@ -1,19 +1,19 @@
-$color-1: #6b9ac4;
-$color-1-dark: #15406b;
-$color-2: #679436;
-$color-2-dark: #073b03;
+$color-1: #6f96b5;
+$color-1-dark: #426584;
+$color-2: #4f6a2a;
+$color-2-dark: #375724;
 $color-3: #fa9500;
-$color-4: #a53f2b;
+$color-4: #8c271e;
 
 $color-white: #f0eff4;
 
-$color-grey-lighter: #d6d5c9;
-$color-grey-light: #b9b7a7;
-$color-grey-medium: #7c90a0;
-$color-grey-dark: #474350;
+$color-grey-lighter: #e4e8ef;
+$color-grey-light: #8e9ba5;
+$color-grey-medium: #465057;
+$color-grey-dark: #303436;
 
-$color-black: #1c1e1c;
-$color-black-2: #22223b;
+$color-black: #0f100f;
+// $color-black: #22223b;
 
 // STYLE
 
@@ -32,22 +32,39 @@ $shadow-light-w: rgba(#5a5a5a, 0.5) 0px 0.8rem 2.4rem;
 $shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
   rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
+$hero-gradient: linear-gradient(
+  to right,
+  rgba($color-grey-dark, 0.3),
+  rgba($color-grey-dark, 0.3)
+);
+
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px
-$bp-small: 37.5em; // 600
-$bp-xs: 31.25em; // 500px
+// $bp-largest: 75em; // 1200px
+// $bp-large: 62.5em; // 1000px
+// $bp-medium: 50em; // 800px
+// $bp-small: 37.5em; // 600
+// $bp-xs: 31.25em; // 500px
 
 // COLORS FROM https://coolors.co
 /* CSS HEX */
-// --raisin-black: #181922ff;
-// --slate-gray: #6d7c9aff;
-// --eggplant: #5f4e5cff;
-// --eggplant-2: #44343fff;
-// --glaucous: #5f76bcff;
-// --vista-blue: #738fccff;
-// --raisin-black-2: #272837ff;
-// --ghost-white: #e0e2eaff;
-// --raisin-black-3: #1e1d27ff;
-// --space-cadet: #3d3d57ff;
+// --alice-blue: #E4E8EF;
+// --onyx: #303436;
+// --lapis-lazuli: #426584;
+// --eerie-black: #1B1D1C;
+// --cadet-gray: #8E9BA5;
+// --night: #0F100F;
+// --air-superiority-blue: #6F96B5;
+// --outer-space: #465057;
+// --dark-moss-green: #375724;
+// --dark-moss-green-2: #4F6A2A;
+// old gold: #e2c044;
+// dark-red #550C18;
+// #8C271E ;
+// #A22C29;
+
+/* CSS HEX */
+// --lemon-chiffon: #f4f0bb;
+// --chamoisee: #91785d;
+// --lapis-lazuli: #165c81;
+// --jordy-blue: #afcbff;
+// --forest-green: #138a36;
