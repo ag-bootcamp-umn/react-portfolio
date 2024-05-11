@@ -1,6 +1,8 @@
 [
   {
     "title": "Pinnacle Solar",
+    "description": "A website for a solar energy company in Massachusetts",
+    "stack": ["Wordpress", "wordpress/scripts", "php", "Javascript", "Sass"],
     "github": "https://github.com/agDesignz/pinnacle-solar_wp",
     "deployed": "https://pinnaclesolarenergy.com/",
     "image": "/images/project-pinn.png",
@@ -8,6 +10,8 @@
   },
   {
     "title": "VoteDavidGS",
+    "description": "A campaign website for a city-council candidate",
+    "stack": ["Wordpress", "wordpress/scripts", "php", "Javascript", "Sass"],
     "github": "https://github.com/agDesignz/votedavidgs-wp",
     "deployed": "https://votedavidgs.com/",
     "image": "/images/project-votedg.png",
@@ -15,6 +19,16 @@
   },
   {
     "title": "JobPilot",
+    "description": "Final group project: UMN / EdX Full-Stack Web Development Bootcamp",
+    "stack": [
+      "React",
+      "MongoDB",
+      "Mongoose",
+      "bcrypt",
+      "JWT",
+      "Sass",
+      "Bootstrap"
+    ],
     "github": "https://github.com/Ms-Meredith-McD/JobPilot",
     "deployed": "https://job-pilot-a6ce9a91751d.herokuapp.com/",
     "image": "/images/project-jobpilot.png",
@@ -22,6 +36,7 @@
   },
   {
     "title": "DKG Landscaping",
+    "description": "Fictitious company website, for practicing Sass and CSS",
     "github": "https://github.com/agDesignz/dkgLandscaping_Sass",
     "deployed": "https://agdesignz.github.io/dkgLandscaping_Sass/",
     "image": "/images/project-dkg.png",
@@ -29,6 +44,7 @@
   },
   {
     "title": "Jane Prince",
+    "description": "Website for a city council member",
     "github": "https://github.com/agDesignz/jane_prince_html",
     "deployed": "https://agdesignz.github.io/jane_prince_html/",
     "image": "/images/project-jane.png",
@@ -36,6 +52,7 @@
   },
   {
     "title": "Pets R Us",
+    "description": "Group project: UMN / EdX Full-Stack Web Development Bootcamp",
     "github": "https://github.com/ag-bootcamp-umn/pets-r-us",
     "deployed": "https://petsrus-mock-charity-bba28605e28b.herokuapp.com/pets",
     "image": "/images/project-pets.png",

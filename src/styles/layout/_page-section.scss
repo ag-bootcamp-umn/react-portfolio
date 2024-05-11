@@ -7,14 +7,13 @@
   grid-auto-rows: auto;
   gap: 2.5rem;
 
-  &--blue-2 {
+  &--blue {
     background: v.$color-1-dark;
     color: v.$color-grey-light;
   }
 
-  &--green-2 {
-    background: v.$color-2-dark;
-    color: v.$color-grey-light;
+  &--grey {
+    background: v.$color-grey-light;
   }
 
   &--padding-top {

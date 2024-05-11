@@ -17,23 +17,33 @@ export default function Project({ project }) {
   return (
     <>
       <div className="col-md-6 col-lg-4 project">
-        <h2>{project.title}</h2>
-        {/* <img src={project.image} alt={project.alt} /> */}
+        {!imgLoaded ? (
+          <div>Loading...</div>
+        ) : (
+          <img src={imgUrl} alt={project.alt} />
+        )}
+        <div className="project__cover">
+          <Link className="project__link" to={project.deployed} target="_blank">
+            <h2>{project.title}</h2>
+          </Link>
 
-        <Link
-          className="project__img-link"
-          to={project.deployed}
-          target="_blank"
-        >
-          {!imgLoaded ? (
-            <div>Loading...</div>
-          ) : (
-            <img src={imgUrl} alt={project.alt} />
+          <div className="project__description">
+            <p>{project.description}</p>
+          </div>
+          {project.stack && (
+            <div className="project__stack">
+              <h4>Stack:</h4>
+              <ul>
+                {project.stack.map((stackItem) => (
+                  <li>{stackItem}</li>
+                ))}
+              </ul>
+            </div>
           )}
-        </Link>
-        <Link to={project.github} target="_blank">
-          Github
-        </Link>
+          <Link className="project__link" to={project.github} target="_blank">
+            Github
+          </Link>
+        </div>
       </div>
     </>
   );

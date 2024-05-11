@@ -13,13 +13,13 @@ html {
   box-sizing: border-box;
   font-size: 50%;
 
-  @include m.respond(bp-md) {
+  @include m.bp-md {
     font-size: 62.5%;
   }
 }
 
 body {
-  background-color: v.$color-grey-lighter;
+  background-color: v.$color-grey-lightest;
   line-height: 1.7;
 }
 

@@ -28,12 +28,12 @@ body {
   line-height: 1.2;
   letter-spacing: 2px;
 
-  @include m.respond(bp-lg) {
+  @include m.bp-lg {
     font-size: 5rem;
     letter-spacing: 1.5px;
   }
 
-  @include m.respond(bp-sm) {
+  @include m.bp-sm {
     font-size: 6rem;
     letter-spacing: 1.2px;
   }
@@ -44,11 +44,11 @@ body {
   font-weight: 500;
   line-height: 1.5;
 
-  @include m.respond(bp-lg) {
+  @include m.bp-lg {
     font-size: 4.2rem;
   }
 
-  @include m.respond(bp-sm) {
+  @include m.bp-sm {
     font-size: 5rem;
   }
 }
@@ -59,7 +59,7 @@ body {
   line-height: 1.2;
   letter-spacing: 1px;
 
-  @include m.respond(bp-lg) {
+  @include m.bp-lg {
     font-size: 3.4rem;
     line-height: 1.5;
   }
@@ -68,7 +68,7 @@ body {
 p {
   font-size: 2.5rem;
 
-  @include m.respond(bp-lg) {
+  @include m.bp-lg {
     font-size: 2.8rem;
   }
 }
@@ -78,5 +78,5 @@ a {
 }
 
 .error-msg {
-  color: v.$color-4;
+  color: v.$font-warning;
 }

@@ -10,26 +10,16 @@
   overflow: hidden;
   background: v.$hero-gradient,
     // url(../assets/images/bg-mountains.png);
-    url(../../public/images/bg-monadnock-ps.jpg) no-repeat left center / cover;
-
-  @include m.bp-sm {
-    background: v.$hero-gradient,
-      url(../../public/images/bg-monadnock-pl.jpg) no-repeat left center / cover;
-  }
+    url(../../public/images/bg-sm.jpg) no-repeat right top / cover;
 
   @include m.bp-md {
     background: v.$hero-gradient,
-      url(../../public/images/bg-monadnock-ls.jpg) no-repeat left center / cover;
-  }
-
-  @include m.bp-h-md {
-    background: v.$hero-gradient,
-      url(../../public/images/bg-monadnock-ll.jpg) no-repeat left center / cover;
+      url(../../public/images/bg-md.jpg) no-repeat right center / cover;
   }
 
   @include m.bp-lg {
     background: v.$hero-gradient,
-      url(../../public/images/bg-monadnock-ll.jpg) no-repeat left center / cover;
+      url(../../public/images/bg-lg.jpg) no-repeat right center / cover;
   }
 
   &__content {
@@ -37,6 +27,11 @@
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
     gap: 1.5rem;
-    color: v.$color-white;
+    color: v.$color-1-dark;
+    text-align: center;
+
+    @include m.bp-xl {
+      text-align: left;
+    }
   }
 }
