@@ -25,14 +25,20 @@ $font-mono: monospace;
 $default-font-size: 2rem;
 
 $font-dark: $color-grey-dark;
-$font-light: $color-2;
+$font-light: $color-grey-light;
 $font-nav: $color-1-light;
 $font-warning: $color-3;
 
-$imgShadow: 0 0.5rem 1rem rgba(#222222, 0.5);
-$shadow-light-w: rgba(#5a5a5a, 0.5) 0px 0.8rem 2.4rem;
-$shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$shadow-medium: rgba($color-grey-dark, 0.5) 0px 0.8rem 2.4rem;
+
+$shadow-dark: 0 20px 25px -5px rgba($color-grey-dark, 0.5),
+  0 8px 10px -6px rgba($color-grey-dark, 0.5);
+
+// $shadow-light: 0 20px 25px -5px rgba($color-white, 0.5),
+//   0 8px 10px -6px rgba($color-white, 0.5);
+
+$shadow-light: 0 0.5rem 2.5rem -0.5rem rgba($color-grey-medium, 0.5),
+  0 0 2rem -0.6rem rgba($color-grey-medium, 0.5);
 
 $hero-gradient: linear-gradient(
   to right,
@@ -41,9 +47,9 @@ $hero-gradient: linear-gradient(
 );
 
 $project-gradient: linear-gradient(
-  to right,
-  rgba($color-grey-light, 0.95),
-  rgba($color-grey-light, 0.95)
+  to right top,
+  rgba($color-1-dark, 0.95),
+  rgba($color-1, 0.95)
 );
 
 $project-box-gradient: linear-gradient(
@@ -58,11 +64,3 @@ $project-box-gradient: linear-gradient(
 // $bp-medium: 50em; // 800px
 // $bp-small: 37.5em; // 600
 // $bp-xs: 31.25em; // 500px
-
-/* CSS HEX */
-// --bice-blue: #2e6ea2;
-// --indigo-dye: #1c4d71;
-// --jet: #2b2e32;
-// --amaranth-purple: #a63446;
-// --vanilla: #F6EFA6;
-// --india-green: #358600;

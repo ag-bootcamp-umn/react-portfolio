@@ -6,10 +6,10 @@ export default function Portfolio() {
   if (!projectData.length) return <></>;
   return (
     <>
-      <section className="page-section page-section--blue">
-        <div className="container">
-          <h1 className="heading-1">Portfolio</h1>
-          <h3 className="heading-3">A collection of my work</h3>
+      <section className="page-section">
+        <div className="container container--800 padding-bottom">
+          <h1 className="heading-1 text-center">Portfolio</h1>
+          <h3 className="heading-3 text-center">A collection of my work</h3>
           <p>
             My own work, including deployed websites built for clients and
             practice work from my online courses and the full-stack coding

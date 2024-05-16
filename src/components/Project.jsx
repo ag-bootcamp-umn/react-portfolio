@@ -16,7 +16,7 @@ export default function Project({ project }) {
 
   return (
     <>
-      <div className="col-md-6 col-lg-4 project">
+      <div className="project radius">
         {!imgLoaded ? (
           <div>Loading...</div>
         ) : (
@@ -32,7 +32,7 @@ export default function Project({ project }) {
           </div>
           {project.stack && (
             <div className="project__stack">
-              <h4>Stack:</h4>
+              {/* <h4>Stack:</h4> */}
               <ul>
                 {project.stack.map((stackItem) => (
                   <li>{stackItem}</li>
