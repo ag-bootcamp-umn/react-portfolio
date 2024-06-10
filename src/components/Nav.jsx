@@ -6,10 +6,11 @@ export default function Nav({ navOpen }) {
   const { currentPage, setMenuOpen, menuOpen } = usePageContext();
   const params = useParams();
   const pages = [
-    { page: "About", route: "/" },
-    { page: "Portfolio", route: "/portfolio" },
-    { page: "Resume", route: "/resume" },
-    { page: "Contact", route: "/contact" },
+    { page: "Top", route: "#" },
+    { page: "About", route: "#about" },
+    { page: "Portfolio", route: "#portfolio" },
+    { page: "Skills", route: "#skills" },
+    { page: "Contact", route: "#contact" },
   ];
 
   function checkHandler() {
@@ -27,9 +28,9 @@ export default function Nav({ navOpen }) {
             }`}
             key={page}
           >
-            <Link to={route} onClick={checkHandler}>
+            <a href={route} onClick={checkHandler}>
               {page}
-            </Link>
+            </a>
           </div>
         ))}
       </nav>

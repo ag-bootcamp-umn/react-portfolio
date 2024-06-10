@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.contact {
+  &__card {
+    color: v.$color-1;
+    text-align: center;
+
+    @include m.bp-md {
+      text-align: left;
+      // background: v.$color-white;
+      padding: 1.5rem 2rem;
+      border-radius: 0.5rem;
+      // box-shadow: v.$shadow-medium;
+    }
+  }
+
+  &__link {
+    font-size: 1.8rem;
+
+    &,
+    &:link,
+    &:visited {
+      color: v.$color-1-dark;
+    }
+    &:hover {
+      color: v.$color-1-light;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__field {
+    & input {
+      border-radius: 5rem;
+    }
+
+    & textarea {
+      border-radius: 1.2rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: v.$color-white-true;
+    color: v.$color-grey-medium;
+    box-shadow: v.$shadow-light;
+    outline: none;
+    font-size: 1.8rem;
+    transition: background-color 0.3s;
+
+    & textarea {
+      border-radius: 1rem;
+    }
+
+    &:focus {
+      background-color: rgba(v.$color-1-light, 1);
+      color: v.$color-white-true;
+
+      &::placeholder {
+        color: v.$color-grey-light;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    width: 100%;
+    max-width: 30rem;
+
+    @include m.bp-md {
+      max-width: 100%;
+    }
+  }
+}

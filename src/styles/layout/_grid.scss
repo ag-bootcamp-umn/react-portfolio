@@ -6,6 +6,10 @@
 
   &--gap {
     gap: 4rem;
+
+    &--row-sm {
+      row-gap: 1.4rem;
+    }
   }
 
   &--md-2 {

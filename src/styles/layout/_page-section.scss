@@ -10,10 +10,6 @@
   &--blue {
     background: v.$color-1-dark;
     color: v.$font-light;
-
-    & img {
-      box-shadow: v.$shadow-light;
-    }
   }
 
   &--grey {

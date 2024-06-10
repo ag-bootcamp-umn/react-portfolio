@@ -10,16 +10,16 @@
   overflow: hidden;
   background: v.$hero-gradient,
     // url(../assets/images/bg-mountains.png);
-    url(../../public/images/bg-sm.jpg) no-repeat right top / cover;
+    url(/images/bg-sm.jpg) no-repeat right top / cover;
 
   @include m.bp-md {
     background: v.$hero-gradient,
-      url(../../public/images/bg-md.jpg) no-repeat right center / cover;
+      url(/images/bg-md.jpg) no-repeat right center / cover;
   }
 
   @include m.bp-lg {
     background: v.$hero-gradient,
-      url(../../public/images/bg-lg.jpg) no-repeat right center / cover;
+      url(/images/bg-lg.jpg) no-repeat right center / cover;
   }
 
   &__content {

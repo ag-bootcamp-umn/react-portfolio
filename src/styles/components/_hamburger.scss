@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1050;
 
   @include m.bp-sm {
     border-radius: 0.3rem;

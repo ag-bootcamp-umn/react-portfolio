@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PageProvider from "./providers/PageProvider";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { About, Contact, Home, Portfolio, Resume } from "./pages";
+import Home from "./pages/Home";
 import { Footer, Header, Nav } from "./components";
 
 export default function App() {
@@ -15,9 +15,6 @@ export default function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/resume" element={<Resume />} />
-              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />

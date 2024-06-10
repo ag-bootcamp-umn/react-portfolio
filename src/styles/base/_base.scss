@@ -12,6 +12,7 @@
 html {
   box-sizing: border-box;
   font-size: 50%;
+  scroll-behavior: smooth;
 
   @include m.bp-md {
     font-size: 62.5%;

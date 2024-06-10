@@ -1,18 +1,8 @@
+@use "../abstracts/variables" as v;
+
 .resume {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  text-align: center;
-
-  &__title {
-    font-size: 3rem;
-  }
-
-  &__skill {
-    font-size: 2.4rem;
-  }
-
-  &__item {
-    margin-top: 2rem;
-  }
+  gap: 4rem;
+  align-items: center;
 }

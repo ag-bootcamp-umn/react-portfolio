@@ -3,19 +3,34 @@
 
 .footer {
   background-color: v.$color-black;
+  padding: 0.7rem 0;
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__text {
+    color: v.$color-grey-light;
+  }
 
   &__link {
+    display: flex;
+
     &,
     &:link,
     &:visited {
-      color: v.$color-white;
+      color: v.$color-grey-light;
       text-decoration: none;
+    }
+
+    &:active,
+    &:hover {
+      color: v.$color-white;
     }
   }
 
-  &:active,
-  &:hover {
-    color: v.$color-1;
+  &__icon {
+    width: 3rem;
   }
 }

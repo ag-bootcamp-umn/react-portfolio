@@ -8,7 +8,7 @@ export default function hero() {
             <h2 className="heading-2">
               Full-stack web developer. <br />
               I bring stories to life <br />
-              through web technology
+              through web technology.
             </h2>
           </div>
         </div>

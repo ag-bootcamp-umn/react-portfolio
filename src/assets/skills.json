@@ -3,27 +3,22 @@
     "skills": [
       "React",
       "Redux",
-      "Node",
-      "Express",
       "MongoDB",
+      "MySQL",
       "Mongoose",
       "MERN Stack",
       "REST API",
-      "GraphQL",
-      "Sass",
+      "Scss",
       "PostCSS",
       "Bootstrap",
-      "Client-Server Model",
-      "AJAX (Fetch API)",
       "JavaScript",
       "jQuery",
       "Git/Github",
-      "Unit Testing/ Jest",
       "JWT",
       "Wordpress",
-      "wp-scripts (NPM)",
-      "PHP (Wordpress-specific",
-      "Wordpress Development"
+      "Wordpress Development",
+      "@wordpress/scripts (NPM)",
+      "PHP (Wordpress-specific)"
     ]
   }
 ]
