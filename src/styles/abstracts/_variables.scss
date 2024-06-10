@@ -1,18 +1,20 @@
-$color-orange: #b66d0d;
-$color-red: #ad1e11;
-$color-green: #14591d;
-$color-blue: #5880b9;
-$color-blue-2: #052c54;
-$color-coffee: #704e2e;
+$color-1: #0c598a;
+$color-1-light: #3193da;
+$color-1-medium: #146ab1;
+$color-1-dark: #1f3d68;
+$color-2: #245b09;
+$color-3: #a63446;
 
-$color-white: #e8eef2;
+$color-white: #f0eff4;
+$color-white-true: #fff;
 
-$color-grey-light: #d6c9c9;
-$color-grey-medium: #9a98b5;
-$color-grey-dark: #37393a;
+$color-grey-lightest: #e4e8ef;
+$color-grey-light: #c2c4c3;
+$color-grey-medium: #868a88;
+$color-grey-dark: #393b3a;
 
-$color-black: #1c1e1c;
-$color-black-2: #22223b;
+$color-black: #161716;
+$color-black-2: #2a2e2f;
 
 // STYLE
 
@@ -24,16 +26,41 @@ $default-font-size: 2rem;
 
 $font-dark: $color-grey-dark;
 $font-light: $color-grey-light;
-$font-nav: $color-grey-light;
+$font-nav: $color-1-light;
+$font-warning: $color-3;
 
-$imgShadow: 0 0.5rem 1rem rgba(#222222, 0.5);
-$shadow-light-w: rgba(#5a5a5a, 0.5) 0px 0.8rem 2.4rem;
-$shadow-light: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$shadow-medium: rgba($color-grey-dark, 0.5) 0px 0.8rem 2.4rem;
+
+$shadow-dark: 0 20px 25px -5px rgba($color-grey-dark, 0.5),
+  0 8px 10px -6px rgba($color-grey-dark, 0.5);
+
+// $shadow-light: 0 20px 25px -5px rgba($color-white, 0.5),
+//   0 8px 10px -6px rgba($color-white, 0.5);
+
+$shadow-light: 0 0.5rem 2.5rem -0.5rem rgba($color-grey-medium, 0.5),
+  0 0 2rem -0.6rem rgba($color-grey-medium, 0.5);
+
+$hero-gradient: linear-gradient(
+  to right,
+  rgba($color-white-true, 0.6),
+  rgba($color-white-true, 0.75)
+);
+
+$project-gradient: linear-gradient(
+  to right top,
+  rgba($color-grey-dark, 0.95),
+  rgba($color-grey-dark, 0.85)
+);
+
+$project-box-gradient: linear-gradient(
+  to right,
+  rgba($color-grey-light, 0.75),
+  rgba($color-grey-light, 0.75)
+);
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px
-$bp-small: 37.5em; // 600
-$bp-xs: 31.25em; // 500px
+// $bp-largest: 75em; // 1200px
+// $bp-large: 62.5em; // 1000px
+// $bp-medium: 50em; // 800px
+// $bp-small: 37.5em; // 600
+// $bp-xs: 31.25em; // 500px

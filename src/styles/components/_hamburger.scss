@@ -4,20 +4,30 @@
 .hamburger {
   background-color: v.$color-black;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   color: v.$color-white;
   gap: 1.5rem;
   padding: 1rem;
-  border-radius: 0.5rem;
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+
+  @include m.bp-sm {
+    border-radius: 0.3rem;
+    top: 2rem;
+    right: 2rem;
+    left: auto;
+    grid-template-columns: auto auto;
+  }
 
   &__title {
     font-size: 2.6rem;
     line-height: 1;
     font-weight: 100;
+    text-align: right;
   }
 
   &__checkbox {
@@ -48,7 +58,7 @@
       width: 3.5rem;
       height: 2.6px;
       border-radius: 5rem;
-      background-color: v.$font-nav;
+      background-color: v.$color-1-light;
       transition: transform 0.2s;
     }
 
@@ -72,7 +82,7 @@
   &__button:hover &__icon,
   &__button:hover &__icon::after,
   &__button:hover &__icon::before {
-    background-color: v.$color-blue;
+    background-color: v.$color-1;
   }
 
   &__button:hover &__icon::before {
@@ -99,9 +109,5 @@
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
     transform: rotate(-45deg);
-  }
-
-  &:has(.hamburger__checkbox:checked) {
-    right: 4.7rem;
   }
 }

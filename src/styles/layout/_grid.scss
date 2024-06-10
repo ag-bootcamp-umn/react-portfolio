@@ -6,18 +6,26 @@
 
   &--gap {
     gap: 4rem;
+
+    &--row-sm {
+      row-gap: 1.4rem;
+    }
   }
 
-  &--123 {
+  &--md-2 {
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
 
-    @include m.respond(bp-md) {
+    @include m.bp-md {
       grid-template-columns: 1fr 1fr;
     }
 
     // @include m.respond(bp-xl) {
     //   grid-template-columns: 1fr 1fr 1fr;
     // }
+  }
+
+  &--center {
+    justify-items: center;
   }
 }

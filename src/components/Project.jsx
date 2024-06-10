@@ -16,24 +16,48 @@ export default function Project({ project }) {
 
   return (
     <>
-      <div className="col-md-6 col-lg-4 project">
-        <h2>{project.title}</h2>
-        {/* <img src={project.image} alt={project.alt} /> */}
+      <div className="project radius">
+        {!imgLoaded ? (
+          <div>Loading...</div>
+        ) : (
+          <img src={imgUrl} alt={project.alt} />
+        )}
+        <div className="project__cover">
+          {/* <Link
+            className="project__link radius"
+            to={project.deployed}
+            target="_blank"
+          > */}
+          <h2>{project.title}</h2>
+          {/* </Link> */}
 
-        <Link
-          className="project__img-link"
-          to={project.deployed}
-          target="_blank"
-        >
-          {!imgLoaded ? (
-            <div>Loading...</div>
-          ) : (
-            <img src={imgUrl} alt={project.alt} />
+          {/* <div className="project__description">
+            <p>{project.description}</p>
+          </div> */}
+          {project.stack && (
+            <ul className="project__stack">
+              {project.stack.map((stackItem, idx) => (
+                <li key={idx}>{stackItem}</li>
+              ))}
+            </ul>
           )}
-        </Link>
-        <Link to={project.github} target="_blank">
-          Github
-        </Link>
+          <div className="project__links-container">
+            <Link
+              className="project__link radius"
+              to={project.deployed}
+              target="_blank"
+            >
+              Visit Site
+            </Link>
+            <Link
+              className="project__link radius"
+              to={project.github}
+              target="_blank"
+            >
+              Github
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

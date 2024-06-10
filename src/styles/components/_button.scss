@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.button {
+  border: none;
+  background: v.$color-grey-lightest;
+  padding: 1.2rem 2rem;
+  color: v.$color-1-dark;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &--stretch {
+    &:hover {
+      opacity: 0.95;
+      transform: scaleX(1.06);
+    }
+  }
+
+  &--blue {
+    background: v.$color-1;
+    color: v.$color-white;
+  }
+
+  &--lg {
+    // height: 4rem;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  & > a {
+    text-decoration: none;
+    color: v.$color-grey-dark;
+  }
+}

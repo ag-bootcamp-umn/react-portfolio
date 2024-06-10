@@ -1,8 +1,24 @@
-.u-overflow-hidden {
+.justify-center {
+  justify-self: center;
+}
+
+.overflow-hidden {
   overflow: hidden;
 }
 
-.u-resize-animation-stopper * {
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+
+.radius {
+  border-radius: 0.5rem;
+}
+
+.resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+.text-center {
+  text-align: center;
 }

@@ -8,17 +8,30 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient(
-      rgba(v.$color-black, 0.75),
-      rgba(v.$color-black, 0.75)
-    ),
-    url(../assets/images/bg-mountains.png);
+  background: v.$hero-gradient,
+    // url(../assets/images/bg-mountains.png);
+    url(/images/bg-sm.jpg) no-repeat right top / cover;
+
+  @include m.bp-md {
+    background: v.$hero-gradient,
+      url(/images/bg-md.jpg) no-repeat right center / cover;
+  }
+
+  @include m.bp-lg {
+    background: v.$hero-gradient,
+      url(/images/bg-lg.jpg) no-repeat right center / cover;
+  }
 
   &__content {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
     gap: 1.5rem;
-    color: v.$color-white;
+    color: v.$color-1-dark;
+    text-align: center;
+
+    @include m.bp-xl {
+      text-align: left;
+    }
   }
 }

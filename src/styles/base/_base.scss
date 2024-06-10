@@ -11,15 +11,16 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 50%;
+  scroll-behavior: smooth;
 
-  @include m.respond(bp-xl) {
-    font-size: 50%;
+  @include m.bp-md {
+    font-size: 62.5%;
   }
 }
 
 body {
-  background-color: v.$color-grey-dark;
+  background-color: v.$color-grey-lightest;
   line-height: 1.7;
 }
 
@@ -33,11 +34,11 @@ body {
   }
 }
 
-figure {
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: v.$imgShadow;
-}
+// figure {
+//   border-radius: 4px;
+//   overflow: hidden;
+//   box-shadow: v.$imgShadow;
+// }
 
 img,
 figure > img {

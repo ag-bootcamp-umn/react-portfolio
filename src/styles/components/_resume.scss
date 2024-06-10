@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}

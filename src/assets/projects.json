@@ -1,6 +1,8 @@
 [
   {
     "title": "Pinnacle Solar",
+    "description": "A website for a solar energy company in Massachusetts",
+    "stack": ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     "github": "https://github.com/agDesignz/pinnacle-solar_wp",
     "deployed": "https://pinnaclesolarenergy.com/",
     "image": "/images/project-pinn.png",
@@ -8,20 +10,43 @@
   },
   {
     "title": "VoteDavidGS",
+    "description": "A campaign website for a city-council candidate",
+    "stack": ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     "github": "https://github.com/agDesignz/votedavidgs-wp",
     "deployed": "https://votedavidgs.com/",
     "image": "/images/project-votedg.png",
     "alt": "screenshot of VoteDageGS website."
   },
   {
+    "title": "JobPilot",
+    "description": "Final group project: UMN / EdX Full-Stack Web Development Bootcamp",
+    "stack": [
+      "React",
+      "MongoDB",
+      "Mongoose",
+      "bcrypt",
+      "JWT",
+      "Scss",
+      "Bootstrap"
+    ],
+    "github": "https://github.com/Ms-Meredith-McD/JobPilot",
+    "deployed": "https://job-pilot-a6ce9a91751d.herokuapp.com/",
+    "image": "/images/project-jobpilot.png",
+    "alt": "screenshot of JobPilot."
+  },
+  {
     "title": "DKG Landscaping",
-    "github": "https://github.com/agDesignz/dkgLandscaping_Sass",
-    "deployed": "https://agdesignz.github.io/dkgLandscaping_Sass/",
+    "description": "Fictitious company website, for practicing Scss and CSS",
+    "stack": ["Scss", "HTML", "Javascript"],
+    "github": "https://github.com/agDesignz/dkgLandscaping_Scss",
+    "deployed": "https://agdesignz.github.io/dkgLandscaping_Scss/",
     "image": "/images/project-dkg.png",
     "alt": "screenshot of DKG landscaping."
   },
   {
     "title": "Jane Prince",
+    "description": "Website for a city council member",
+    "stack": ["Wordpress", "wordpress/scripts", "php", "Javascript", "Scss"],
     "github": "https://github.com/agDesignz/jane_prince_html",
     "deployed": "https://agdesignz.github.io/jane_prince_html/",
     "image": "/images/project-jane.png",
@@ -29,16 +54,19 @@
   },
   {
     "title": "Pets R Us",
+    "description": "Group project: UMN / EdX Full-Stack Web Development Bootcamp",
+    "stack": [
+      "Node.js",
+      "Handlebars",
+      "CSS",
+      "MySQL",
+      "sequelize",
+      "dayjs",
+      "bcrypt"
+    ],
     "github": "https://github.com/ag-bootcamp-umn/pets-r-us",
     "deployed": "https://petsrus-mock-charity-bba28605e28b.herokuapp.com/pets",
     "image": "/images/project-pets.png",
     "alt": "screenshot of PetsRUs mock charity."
-  },
-  {
-    "title": "Jot-it Notes",
-    "github": "https://github.com/ag-bootcamp-umn/jot-it-notes",
-    "deployed": "https://jot-it-notes-a8f6eb8bda87.herokuapp.com/",
-    "image": "/images/project-notes.png",
-    "alt": "screenshot of jot-it note-taking app."
   }
 ]

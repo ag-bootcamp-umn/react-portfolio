@@ -1,0 +1,13 @@
+.container {
+  width: 95%;
+  max-width: 104rem;
+  margin: 0 auto;
+
+  &--800 {
+    max-width: 80rem;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
